@@ -1,0 +1,75 @@
+/* Citation Linker styles */
+
+#exlidCitationLinkerContainer { background-color:#ecf0f3; width:100%; height:510px; padding-top:2%}
+#exlidCitationLinkerTile {  clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:auto; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
+
+.exliLoadingFdb {position: absolute; top: 10%; left: 15%; width: 75%; height: 400px; background-color: white; z-index:1002; background-image:url(../images/icon_loading_circle.gif); background-repeat:no-repeat; background-position:center; text-align:center;-moz-opacity:0.6; opacity:0.60; filter: alpha(opacity=60 );}
+#exlidCitationLinkerListWrapper {clear:both;}
+
+
+/*header*/
+.EXLCitationLinkerHeader { width:100%; clear:both; display:block; height:3em;}
+.EXLCitationLinkerHeader h1 { float:left; font-size:100%; color:#000000; line-height:300%; padding-left:1em}
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons { padding:0em; width:35%; float:right; text-align:right; height:18px; padding-top:0.8em ; margin-right:0.5em }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons ul { float:right; margin-bottom:9px; }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li { list-style:none; float:left; height:18px; border-right:0px solid #e1e1e1;}
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li span {background-image:none; background-repeat: no-repeat; width:18px; height:18px; display:inline; float:left; }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a { padding:0.2em 0.2em 0.2em 0.2em; cursor:pointer; text-decoration:none	 }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a span.EXLCitationLinkerHeaderButtonCloseLabel { display:none  }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a span.EXLCitationLinkerHeaderButtonHelpLabel { display:inline  }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a:hover span.EXLCitationLinkerHeaderButtonHelpLabel { text-decoration:underline  }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a span.EXLCitationLinkerHeaderButtonHelp {background-image:none; background-position: center;border-right:1px solid #e1e1e1; }
+.EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a span.EXLCitationLinkerHeaderButtonClose {background-image: url(../images/icon_close_tabs.png); background-position: center ;margin-left:0em}
+
+/*form*/
+#exlidCitationLinkerRibbon { width:100%; margin-left:0em;  margin-right:0em; clear:left;  }
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbon {clear:both; min-height:9em; width:100%; padding:2em 0em 0em 0em;margin:0px; }
+#exlidCitationLinkerRibbon fieldset fieldset { padding-left:0em; display:block}
+#exlidCitationLinkerRibbon fieldset legend { display:none }
+#exlidCitationLinkerRibbon select { width:7em; border:1px solid #8fb9d0; height:auto; padding-top:0em;padding-left:0em; font-size:100%}
+#exlidCitationLinkerRibbon input { width:17.5em; border:1px solid #8fb9d0; height:1.5em; padding-top:0em;padding-left:0em; font-size:1em;}
+#exlidCitationLinkerRibbon input[disabled] { background-color:#ece9d8;}
+#exlidCitationLinkerRibbon select[disabled] { background-color:#ece9d8;}
+#exlidCitationLinkerRibbon input.EXLCitationLinkerShortInput { width:10em; }
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1{float:left; width:30em; height:auto; margin-right:0em; padding-left:0.5em;}
+div.EXLCitationLinkerFieldRibbonFormFieldsSubmit{padding-bottom:1em;padding-top:1em;clear:left;width:25em; height:auto; margin-right:auto; margin-left:auto; width:98%;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 label {width:11em;display:block; float:left}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 span.EXLCitationLinkerCheckbox  { padding-top:0.5em; display:inline-block; }
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 span.EXLCitationLinkerCheckbox input { width:auto; height:auto; margin-left:5em; float:left; margin-right:0.5em; border:none }
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 span.EXLCitationLinkerCheckbox label { float:left; width:10em; white-space: nowrap;text-align:left   }
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2{float:left; width:auto; height:auto; border-left:1px solid #cccccc; margin-left:1.7em;}
+* html #exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2{width:22em;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2 select {width:12em; height:1.7em;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2 select {/* ie8 and bellow hack to make the select not cut long values*/ width:22.3em\9; height:1.7em\9;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2 label {width:11em;margin-left:1em;float:left;display:block;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFormRow {margin:0em;float:none;clear:both;width:100%;padding-bottom:0.5em; margin-left:0.5em;}
+#exlidCitationLinkerRibbon div.EXLCitationLinkerFormRow fieldset span.EXLCitationLinkerFormRowInlineInput {display:inline;}
+
+/*submit buttons*/
+#exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormSubmitSearch {float:left; display:inline; clear:none; border:1px solid #adb9c2;margin-right: 5px;}
+#exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormClearSearch {float:left; display:inline; clear:none; border:1px solid #adb9c2; margin-left:0em }
+#exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormSubmitSelected {float:left; display:inline; clear:none; border:1px solid #adb9c2; margin-left:auto; margin-top:1em }
+#exlidCitationLinkerContainer input.EXLSubmit  { border:1px solid #ffffff;  padding:0em 0.5em 0em 0.5em; display:block; background-color:#e87107; background-image:url(../images/bg_strip_btn_orange.png); background-repeat:repeat-x;margin:0em; width:80px;  color:#FFFFFF; font-weight: normal;height:24px; cursor: pointer;}
+#exlidCitationLinkerContainer input.EXLSubmitClear  { background-image:url(../images/bg_strip_btn_grey.png); color:#ADB9C2; background-color:#ADB9C2; color:#000000 }
+
+/*tabs*/
+.EXLCitationLinkerTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:2.5em; margin:0em 0em 0em 0em; background-color:#FFFFFF }
+.EXLCitationLinkerTabsRibbon div {width:90%;margin: 0px;clear:left; float:left; margin-left:0em;}
+.EXLCitationLinkerTabsRibbon div ul{margin-left:0.8em; margin-bottom:0em}
+.EXLCitationLinkerTabsRibbon div li {line-height: 200%; font-size:100%; display: inline; min-width:12em; width:auto }
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab {border:1px solid #CCCCCC; border-bottom:0px;height:27px; text-align:center;  vertical-align:middle; cursor:pointer; float: left;padding-left:0.2em;padding-right:0.2em; margin-right:4px; color:#9B9B9B; }
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab a {color:#373737; font-size:100%  }
+.EXLCitationLinkerTabsRibbon div a:hover  { text-decoration:underline;}
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerSelectedTab{border:1px solid #f4762d; border-bottom:2px solid #f4762d;background-color:#f4762d;height:26px; text-align:center; font-weight:bold; vertical-align:middle; float: left;font-weight: bold;text-decoration: none;padding-left:0.8em; padding-right:0.8em;margin-right:4px; color:#ffffff;background-image:url(../images/bg_strip_btn_orange.png); background-repeat:repeat-x; }
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTabHighlight { background-color:#fff899}
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerSelectedTab a{color: #ffffff; }
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerFirstTab {padding-left:0em;}
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerFirstSelectedTab {padding-left:0.5em;}
+
+/*list of databases header*/
+#exlidCitationLinkerTile div.EXLCitationLinkerListHeader { background-color:#f8f8f8; height:26px; border-bottom:1px solid #e1e1e1;  border-top:1px solid #ffffff; }
+
+/*header links*/
+#exlidCitationLinkerTile div div.EXLCitationLinkerListHeaderLinks { width:auto; color:#adb9c2; padding-left:0.7em; line-height:200% }
+#exlidCitationLinkerTile div div.EXLCitationLinkerListHeaderLinks span{ padding:0.3em; width:auto}
+#exlidCitationLinkerTile div div.EXLCitationLinkerListHeaderLinks span a{ }

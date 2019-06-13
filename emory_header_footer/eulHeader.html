@@ -1,0 +1,259 @@
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    //New GA tracking ID
+    ga('create', 'UA-61756900-7', 'auto');
+    ga('require', 'linkid', {'levels': 5});
+    ga('send', 'pageview');
+
+    //Google Analytics Event Tracking
+    /*$('a').on('click', function() {
+        var label = $(this).html
+        ga('send', 'event', 'link', 'click', label);
+    }*/
+
+    //Old GA tracking ID
+    ga('create', 'UA-27498593-1', {'name': 'old'});
+    ga('old.require', 'linkid', {'levels': 5});
+    ga('old.send', 'pageview');
+
+</script>
+<script>
+    /* Adds a trim function to the String object so we can use it multiple times if needed. */
+    String.prototype.trim = function() {
+        return this.replace(/^\s*|\s*$/, "");
+    }
+
+    $(document).ready(function() {
+
+        //Trim spaces from the name
+        var nameHolder = $('span.EXLUserNameDisplay').html().trim();
+
+        if (nameHolder == "Guest") {
+            //removes this element from the DOM
+            $('#exlidMyAccount').remove();
+        }
+
+
+    });
+</script>
+<script>
+/* Changes favicon to Emory dE favicon.  la 20151109 */ 
+//<![CDATA[
+(function() {
+    var link = document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'http://template.library.emory.edu/systems/ex-libris/primo/EUfavicon3.ico';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}());
+//]]>
+</script>
+<div id="header">
+    <div id="global-nav">
+        <ul class="links">
+            <li><a href="http://web.library.emory.edu/" title="">Woodruff</a>
+            </li>
+            <li><a href="http://business.library.emory.edu/" title="">Business</a>
+            </li>
+            <li><a href="http://health.library.emory.edu/" title="">Health Sciences</a>
+            </li>
+            <li><a href="http://library.law.emory.edu/" title="">Law</a>
+            </li>
+            <li><a href="http://rose.library.emory.edu/" title="">Rose</a>
+            </li>
+            <li><a href="http://oxford.library.emory.edu" title="">Oxford College</a>
+            </li>
+            <li><a href="http://www.pitts.emory.edu/" title="">Theology</a>
+            </li>
+            <li id="last">
+                <a href="http://www.emory.edu/" title=""> </a>
+            </li>
+        </ul>
+    </div>
+    <div id="header-content">
+        <!-- removed port :1701 from discovere URL no longer relevant.  la 20151216 -->
+        <a title="Library Home Page" href="http://discovere.emory.edu" class="emoryhomepage">
+            <div class="logo1"> </div>
+        </a>
+        <!--    <script type="text/javascript" src="../../javascript/jquery-1.3.2.js?s"></script> -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/misc/jquery.js?s"></script> -->
+	<!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/yui/yahoo/yahoo-min.js?s"></script> -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/yui/dom/dom-min.js?s"></script> -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/yui/event/event-min.js?s"></script>  -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/main.js?s"></script>  -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/plugins/jquery.inputTip.js?s"></script>  -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/plugins/jquery.webformOtherText.js?s"></script> -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/plugins/jquery-ui-personalized-1.5.2.packed.js?s"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryglobal/js/behaviors/global.js?s"></script>  -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/all/themes/libraryhealthsciences/js/behaviors/search.js?s"></script>   -->
+        <!--    <script type="text/javascript" src="http://web.library.emory.edu/sites/web.library.emory.edu/modules/custom/quicklinks/quicklinks.js"></script>   -->
+        <!--         <div id="navWrapper">
+            <ul id="utilityNav">
+                <li onmouseover="YAHOO.EMORY_EDU.showUtilNav(this)" onmouseout="YAHOO.EMORY_EDU.closeUtilNav(this)" class="topLevel" style=""><a title="Schools" class="utilLink"><span>Schools</span></a>
+                    <div class="flyOut" style="display: none;">
+                        <div class="col col1">
+                            <h4>Undergraduate</h4>
+                            <ul>
+                                <li style=""><a title="Emory College" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.college.emory.edu/-School-EmoryCollege');" href="http://www.college.emory.edu/">Emory College</a>
+                                </li>
+                                <li style=""><a title="Oxford College" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','oxford.emory.edu/-School-OxfordCollege');" href="http://oxford.emory.edu/">Oxford College</a>
+                                </li>
+                                <li style=""><a title="Business School" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.goizueta.emory.edu/-School-BusinessUndergrad');" href="http://www.goizueta.emory.edu/">Business School</a>
+                                </li>
+                                <li style=""><a title="School of Nursing" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.nursing.emory.edu/-School-NursingUndergrad');" href="http://www.nursing.emory.edu/">School of Nursing</a>
+                                </li>
+                            </ul>
+                            <h4>Community</h4>
+                            <ul>
+                                <li style=""><a title="Emory Continuing Education" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.ece.emory.edu-School-ContinuingEd');" href="http://www.ece.emory.edu/">Emory Continuing Education</a>
+                                </li>
+                                <li style=""><a title="Continuing Professional Education" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','http://www.emory.edu/home/academics/continuing-education.html-School-ProfessionalEd');" href="http://www.emory.edu/home/academics/continuing-education.html">Professional Education</a>
+                                </li>
+                                <li style=""><a title="Pre-College Program" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.college.emory.edu/precollege/-School-PreCollege');" href="http://www.college.emory.edu/precollege/">Pre-College Program</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <h4>Graduate</h4>
+                            <ul>
+                                <li style=""><a title="Business School" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.goizueta.emory.edu/-School-BusinessGraduate');" href="http://www.goizueta.emory.edu/">Business School</a>
+                                </li>
+                                <li style=""><a title="Graduate School" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.graduateschool.emory.edu/-School-Graduate');" href="http://www.gs.emory.edu/">Graduate School</a>
+                                </li>
+                                <li style=""><a title="School of Law" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.law.emory.edu/-School-Law');" href="http://www.law.emory.edu/">School of Law</a>
+                                </li>
+                                <li style=""><a title="School of Medicine" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.med.emory.edu/-School-Medicine');" href="http://www.med.emory.edu/">School of Medicine</a>
+                                </li>
+                                <li style=""><a title="School of Nursing" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.nursing.emory.edu/-School-NursingGraduate');" href="http://www.nursing.emory.edu/">School of Nursing</a>
+                                </li>
+                                <li style=""><a title="School of Public Health" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.sph.emory.edu/-School-PublicHealth');" href="http://www.sph.emory.edu/">School of Public Health</a>
+                                </li>
+                                <li style=""><a title="School of Theology" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.candler.emory.edu/-School-Theology');" href="http://www.candler.emory.edu/">School of Theology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li onmouseover="YAHOO.EMORY_EDU.showUtilNav(this)" onmouseout="YAHOO.EMORY_EDU.closeUtilNav(this)" class="topLevel" style=""><a title="Libraries" class="utilLink"><span>Libraries</span></a>
+                    <div class="flyOut" style="display: none;">
+                        <div class="col col1">
+                            <h4>Libraries</h4>
+                            <ul>
+                                <li style=""><a title="Robert W. Woodruff" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','web.library.emory.edu/-Libraries-Main');" href="http://web.library.emory.edu/">Robert W. Woodruff</a>
+                                </li>
+                                <li style=""><a title="Business" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','business.library.emory.edu/-Libraries-Business');" href="http://business.library.emory.edu/">Business</a>
+                                </li>
+                                <li style=""><a title="Chemistry" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','http://web.library.emory.edu/libraries/james-s-guy-chemistry-library/-Libraries-Chemistry');" href="http://web.library.emory.edu/libraries/james-s-guy-chemistry-library">Chemistry</a>
+                                </li>
+                                <li style=""><a title="Health Sciences" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','health.library.emory.edu/-Libraries-HealthSci');" href="http://health.library.emory.edu/">Health Sciences</a>
+                                </li>
+                                <li style=""><a title="Law" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','library.law.emory.edu/-Libraries-Law');" href="http://library.law.emory.edu/">Law</a>
+                                </li>
+                                <li style=""><a title="MARBL" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','marbl.library.emory.edu/-Libraries-MARBL');" href="http://marbl.library.emory.edu/">MARBL</a>
+                                </li>
+                                <li style=""><a title="Matheson Reading Room" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','web.library.emory.edu/libraries/matheson-reading-room-Libraries-Matheson');" href="http://web.library.emory.edu/libraries/matheson-reading-room">Matheson Reading Room</a>
+                                </li>
+                                <li style=""><a title="Music and Media" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','web.library.emory.edu/libraries/music-and-media-Libraries-MusicMedia');" href="http://web.library.emory.edu/libraries/music-and-media">Music &amp; Media</a>
+                                </li>
+                                <li style=""><a title="Oxford College" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','oxford.library.emory.edu/-Libraries-Oxford');" href="http://oxford.library.emory.edu/">Oxford College</a>
+                                </li>
+                                <li style=""><a title="Theology" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.pitts.emory.edu/-Libraries-Theology');" href="http://www.pitts.emory.edu/">Theology</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <h4>Library Tools</h4>
+                            <ul>
+                                <li style=""><a title="Databases" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','web.library.emory.edu/databases/-Libraries-Databases');" href="http://web.library.emory.edu/databases/">Databases</a>
+                                </li>
+                                <li style=""><a title="discoverE" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','discovere.emory.edu-Libraries-discoverE');" href="http://discovere.emory.edu">discoverE</a>
+                                </li>
+                                <li style=""><a title="eJournals" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','ejournals.emory.edu/-Libraries-eJournals');" href="http://ejournals.emory.edu/">eJournals</a>
+                                </li>
+                                <li style=""><a title="Electronic Dissertations" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','etd.library.emory.edu/-Libraries-ElectronicDissertations');" href="https://etd.library.emory.edu/">Electronic Dissertations</a>
+                                </li>
+                                <li style=""><a title="EmoryFindingAids" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','http://findingaids.library.emory.edu/-Libraries-EmoryFindingAids');" href="http://findingaids.library.emory.edu/">EmoryFindingAids</a>
+                                </li>
+                                <li style=""><a title="Emory's Center for Interactive Teaching (ECIT)" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','ecit.emory.edu/-Libraries-ECIT');" href="http://ecit.emory.edu/">ECIT: Interactive Teaching</a>
+                                </li>
+                                <li style=""><a title="EUCLID (Library Catalog)" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.library.emory.edu/-Libraries-EUCLID');" href="http://www.library.emory.edu/">EUCLID</a>
+                                </li>
+                                <li style=""><a title="ILLiad" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.library.emory.edu/uhtbin/nph-illiad-Libraries-ILLiad');" href="http://www.library.emory.edu/uhtbin/nph-illiad">ILLiad</a>
+                                </li>
+                                <li style=""><a title="Research Guides" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','guides.main.library.emory.edu/-Libraries-ResearchGuides');" href="http://guides.main.library.emory.edu/">Research Guides</a>
+                                </li>
+                                <li style=""><a title="Reserves Direct" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','ereserves.library.emory.edu/reserves2/index.php-Libraries-ReservesDirect');" href="https://ereserves.library.emory.edu/reserves2/index.php">Reserves Direct</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li onmouseover="YAHOO.EMORY_EDU.showUtilNav(this)" onmouseout="YAHOO.EMORY_EDU.closeUtilNav(this)" class="topLevel" style=""><a title="Resources" class="utilLink"><span>Resources</span></a>
+                    <div class="flyOut" style="display: none;">
+                        <div class="col col1">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li style=""><a title="Administrative Offices" onclick="overallTracker._trackEvent('UtilityNav','click','www.emory.edu/home/about/administration/-Resources-Administration');" href="http://www.emory.edu/home/about/administration/">Administrative Offices</a>
+                                </li>
+                                <li style=""><a title="Emory Healthcare" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.emoryhealthcare.org/-Resources-EHC');" href="http://www.emoryhealthcare.org/">Emory Healthcare</a>
+                                </li>
+                                <li style=""><a title="Campaign Emory" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.campaign.emory.edu/-Resources-Campaign');" href="http://www.campaign.emory.edu/">Campaign Emory</a>
+                                </li>
+                                <li style=""><a title="Academic Calendars" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.registrar.emory.edu/students/calendars.html-Resources-AcademicCalendar');" href="http://www.registrar.emory.edu/students/calendars.html">Academic Calendars</a>
+                                </li>
+                                <li style=""><a title="Bookstore" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','emory.bncollege.com/-Resources-Bookstore');" href="http://emory.bncollege.com/">Bookstore</a>
+                                </li>
+                                <li style=""><a title="Campus Maps" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','map.emory.edu/-Resources-Maps');" href="http://map.emory.edu/">Campus Maps</a>
+                                </li>
+                                <li style=""><a title="Shuttles and Parking" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','transportation.emory.edu/-Resources-ShuttlesParking');" href="http://transportation.emory.edu/">Shuttles and Parking</a>
+                                </li>
+                                <li style=""><a title="Athletics: Emory Eagles" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.emoryathletics.com/-Resources-Eagles');" href="http://www.emoryathletics.com/">Athletics: Emory Eagles</a>
+                                </li>
+                                <li style=""><a title="Arts at Emory" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.arts.emory.edu/-Resources-Arts');" href="http://www.arts.emory.edu">Arts at Emory</a>
+                                </li>
+                                <li style=""><a title="Michael C. Carlos Museum" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.carlos.emory.edu/-Resources-CarlosMuseum');" href="http://www.carlos.emory.edu/">Michael C. Carlos Museum</a>
+                                </li>
+                                <li style=""><a title="Emory News Center" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','http://news.emory.edu/-Resources-NewsCenter');" href="http://news.emory.edu/">Emory News Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li style=""><a title="Emergency Contacts" onclick="overallTracker._trackEvent('UtilityNav','click','www.emory.edu/home/emergency/index.html-Resources-Emergency');" href="http://www.emory.edu/home/emergency/index.html">Emergency Contacts</a>
+                                </li>
+                                <li style=""><a title="Information Technology (IT)" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.it.emory.edu/-Resources-Computing');" href="http://www.it.emory.edu/">Information Technology (IT)</a>
+                                </li>
+                                <li style=""><a title="Outlook Web Access" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','owa.emory.edu/-Resources-OWA');" href="https://owa.emory.edu/">Outlook Web Access</a>
+                                </li>
+                                <li style=""><a title="Office 365" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','it.emory.edu/student_community/office365/-Resources-Office 365');" href="http://it.emory.edu/student_community/office365/">Office 365</a>
+                                </li>
+                                <li style=""><a title="Blackboard" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','classes.emory.edu/webapps/portal/frameset.jsp-Resources-Blackboard');" href="https://classes.emory.edu/webapps/portal/frameset.jsp">Blackboard</a>
+                                </li>
+                                <li style=""><a title="LearnLink" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','it.emory.edu/showdoc.cfm?docid=722-Resources-LearnLink');" href="http://it.emory.edu/showdoc.cfm?docid=722">LearnLink</a>
+                                </li>
+                                <li style=""><a title="OPUS" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.opus.emory.edu-Resources-OPUS');" href="https://www.opus.emory.edu">OPUS</a>
+                                </li>
+                                <li style=""><a title="PeopleSoft Financials: Compass" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','compass-login.emory.edu/-Resources-Compass');" href="https://compass-login.emory.edu/">PeopleSoft Financials: Compass</a>
+                                </li>
+                                <li style=""><a title="Careers" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.hr.emory.edu/careers/-Resources-Careers');" href="http://www.hr.emory.edu/eu/careers/">Careers</a>
+                                </li>
+                                <li style=""><a title="Human Resources" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','www.hr.emory.edu/eu/-Resources-HR');" href="http://www.hr.emory.edu/eu/">Human Resources</a>
+                                </li>
+                                <li style=""><a title="Emory Report" target="_blank" onclick="overallTracker._trackEvent('UtilityNav','click','http://news.emory.edu/campus/index.html-Resources-EmoryReport');" href="http://news.emory.edu/campus/index.html">Emory Report</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    -->
+</div>
+<div class="clearfix"></div>
+</div>
